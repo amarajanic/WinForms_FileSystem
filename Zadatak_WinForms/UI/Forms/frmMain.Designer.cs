@@ -38,6 +38,10 @@
             // 
             // dgvOsobe
             // 
+            this.dgvOsobe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvOsobe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvOsobe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvOsobe.Location = new System.Drawing.Point(24, 23);
             this.dgvOsobe.Name = "dgvOsobe";
@@ -47,6 +51,7 @@
             // 
             // btnAddNew
             // 
+            this.btnAddNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddNew.Location = new System.Drawing.Point(682, 107);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(84, 29);
@@ -57,6 +62,7 @@
             // 
             // btnDelete
             // 
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDelete.Location = new System.Drawing.Point(682, 152);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(84, 29);
@@ -67,6 +73,7 @@
             // 
             // btnEdit
             // 
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEdit.Enabled = false;
             this.btnEdit.Location = new System.Drawing.Point(682, 199);
             this.btnEdit.Name = "btnEdit";
@@ -78,6 +85,7 @@
             // 
             // btnClose
             // 
+            this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Location = new System.Drawing.Point(682, 395);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(84, 29);
