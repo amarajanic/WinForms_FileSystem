@@ -16,7 +16,7 @@ namespace UI.Forms
     public partial class frmEdit : Form
     {
         Osoba person;
-        string filePath = @"C:\Users\Pc\Desktop\Zadatak.txt";
+        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
         TextFileHelper textFileHelper;
         public frmEdit(Osoba p)
         {

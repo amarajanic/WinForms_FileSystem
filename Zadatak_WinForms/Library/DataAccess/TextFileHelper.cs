@@ -31,7 +31,7 @@ namespace Library.DataAccess
                     people.Add(person);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }

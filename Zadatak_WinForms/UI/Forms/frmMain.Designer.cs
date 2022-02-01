@@ -43,7 +43,6 @@
             this.dgvOsobe.Name = "dgvOsobe";
             this.dgvOsobe.Size = new System.Drawing.Size(637, 401);
             this.dgvOsobe.TabIndex = 0;
-            this.dgvOsobe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvOsobe_CellContentClick);
             this.dgvOsobe.SelectionChanged += new System.EventHandler(this.dgvOsobe_SelectionChanged);
             // 
             // btnAddNew

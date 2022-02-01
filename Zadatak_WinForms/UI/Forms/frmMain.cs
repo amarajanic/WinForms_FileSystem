@@ -17,7 +17,7 @@ namespace UI.Forms
     public partial class frmMain : Form
     {
         List<Osoba> people;
-        string filePath = @"C:\Users\Pc\Desktop\Zadatak.txt";
+        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
         TextFileHelper textFileHelper;
 
         public frmMain()
@@ -50,19 +50,8 @@ namespace UI.Forms
         private void ChildFormClosing(object sender, FormClosingEventArgs e)
         {
             dgvOsobe.DataSource = null;
-            dgvOsobe.DataSource = people;
-        }
-
-        private void ChildFormEditClosing(object sender, FormClosingEventArgs e)
-        {
-            dgvOsobe.DataSource = null;
             people = textFileHelper.ReadFromFile(filePath);
             dgvOsobe.DataSource = people;
-        }
-
-        private void dgvOsobe_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
 
         private void dgvOsobe_SelectionChanged(object sender, EventArgs e)
@@ -91,7 +80,7 @@ namespace UI.Forms
             };
 
             frmEdit frmEdit = new frmEdit(o);
-            frmEdit.FormClosing += new FormClosingEventHandler(ChildFormEditClosing);
+            frmEdit.FormClosing += new FormClosingEventHandler(ChildFormClosing);
             frmEdit.ShowDialog();
         }
 

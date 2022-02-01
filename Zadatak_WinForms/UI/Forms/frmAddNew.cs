@@ -16,7 +16,7 @@ namespace UI.Forms
     public partial class frmAddNew : Form
     {
         List<Osoba> people;
-        string filePath = @"C:\Users\Pc\Desktop\Zadatak.txt";
+        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
         TextFileHelper textFileHelper;
         public frmAddNew(List<Osoba>p)
         {
