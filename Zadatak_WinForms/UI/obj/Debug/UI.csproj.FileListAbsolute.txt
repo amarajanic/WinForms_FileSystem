@@ -1,0 +1,16 @@
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.csproj.AssemblyReference.cache
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.Forms.frmMain.resources
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.Properties.Resources.resources
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.csproj.GenerateResource.cache
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\bin\Debug\UI.exe.config
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\bin\Debug\UI.exe
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\bin\Debug\UI.pdb
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.exe
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.pdb
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\bin\Debug\Library.dll
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\bin\Debug\Library.pdb
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.csproj.CopyComplete
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.Forms.frmAddNew.resources
+C:\Users\Pc\source\repos\Zadatak_WinForms\UI\obj\Debug\UI.Forms.frmEdit.resources

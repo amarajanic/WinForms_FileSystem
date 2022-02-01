@@ -1,0 +1,6 @@
+C:\Users\Pc\source\repos\Zadatak_WinForms\Library\bin\Debug\Library.dll
+C:\Users\Pc\source\repos\Zadatak_WinForms\Library\bin\Debug\Library.pdb
+C:\Users\Pc\source\repos\Zadatak_WinForms\Library\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\Zadatak_WinForms\Library\obj\Debug\Library.dll
+C:\Users\Pc\source\repos\Zadatak_WinForms\Library\obj\Debug\Library.pdb
+C:\Users\Pc\source\repos\Zadatak_WinForms\Library\obj\Debug\Library.csproj.AssemblyReference.cache

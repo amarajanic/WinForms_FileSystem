@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "590e0c08-5c8e-43b0-a218-06064817b0f7": {
+      "ProjectGuid": "590e0c08-5c8e-43b0-a218-06064817b0f7",
+      "DisplayName": "UI",
+      "ColorIndex": 0
+    },
+    "eebccbb5-2f32-4e24-b2fd-313bf6277fae": {
+      "ProjectGuid": "eebccbb5-2f32-4e24-b2fd-313bf6277fae",
+      "DisplayName": "Library",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
