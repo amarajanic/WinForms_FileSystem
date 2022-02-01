@@ -16,7 +16,6 @@ namespace UI.Forms
     public partial class frmAddNew : Form
     {
         List<Osoba> people;
-        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
         TextFileHelper textFileHelper;
         public frmAddNew(List<Osoba>p)
         {
@@ -40,7 +39,7 @@ namespace UI.Forms
 
                 people.Add(person);
 
-                textFileHelper.WriteToFile(filePath, people);
+                textFileHelper.WriteToFile(people);
 
 
                 this.Close();

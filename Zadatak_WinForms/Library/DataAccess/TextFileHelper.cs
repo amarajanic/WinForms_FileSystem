@@ -11,7 +11,9 @@ namespace Library.DataAccess
 {
     public class TextFileHelper : IHelper<Osoba>
     {
-        public List<Osoba> ReadFromFile(string filePath)
+        public string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
+
+        public List<Osoba> ReadFromFile()
         {
             List<Osoba> people = new List<Osoba>();
             List<string> lines = File.ReadAllLines(filePath).ToList();
@@ -38,7 +40,7 @@ namespace Library.DataAccess
             return people.ToList();
         }
 
-        public void WriteToFile(string filePath, List<Osoba> people)
+        public void WriteToFile(List<Osoba> people)
         {
             List<string> output = new List<string>();
 

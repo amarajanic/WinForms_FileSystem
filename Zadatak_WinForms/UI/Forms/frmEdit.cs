@@ -16,7 +16,6 @@ namespace UI.Forms
     public partial class frmEdit : Form
     {
         Osoba person;
-        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
         TextFileHelper textFileHelper;
         public frmEdit(Osoba p)
         {
@@ -39,7 +38,7 @@ namespace UI.Forms
             {
                 List<Osoba> people = new List<Osoba>();
 
-                people = textFileHelper.ReadFromFile(filePath);
+                people = textFileHelper.ReadFromFile();
 
                 var index = people.FindIndex(x => x.JMBG == person.JMBG);
 
@@ -51,7 +50,7 @@ namespace UI.Forms
                     JMBG = tbJmbg.Text
                 };
 
-                textFileHelper.WriteToFile(filePath, people);
+                textFileHelper.WriteToFile(people);
 
                 this.Close();
             }

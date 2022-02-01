@@ -8,7 +8,7 @@ namespace Library.Interfaces
 {
     interface IHelper<T> where T : class
     {
-       List<T> ReadFromFile(string filePath);
-       void WriteToFile(string filePath, List<T> people);
+       List<T> ReadFromFile();
+       void WriteToFile(List<T> people);
     }
 }

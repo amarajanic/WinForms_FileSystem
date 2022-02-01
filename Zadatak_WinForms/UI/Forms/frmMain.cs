@@ -17,7 +17,6 @@ namespace UI.Forms
     public partial class frmMain : Form
     {
         List<Osoba> people;
-        string filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\Zadatak.txt";
         TextFileHelper textFileHelper;
 
         public frmMain()
@@ -29,12 +28,12 @@ namespace UI.Forms
 
         private void frmMain_Load(object sender, EventArgs e)
         {
-            if(!File.Exists(filePath))
+            if(!File.Exists(textFileHelper.filePath))
             {
-            File.CreateText(filePath).Close();
+            File.CreateText(textFileHelper.filePath).Close();
             }
 
-            people = textFileHelper.ReadFromFile(filePath);
+            people = textFileHelper.ReadFromFile();
       
             dgvOsobe.DataSource = people;
 
@@ -50,7 +49,7 @@ namespace UI.Forms
         private void ChildFormClosing(object sender, FormClosingEventArgs e)
         {
             dgvOsobe.DataSource = null;
-            people = textFileHelper.ReadFromFile(filePath);
+            people = textFileHelper.ReadFromFile();
             dgvOsobe.DataSource = people;
         }
 
@@ -104,7 +103,7 @@ namespace UI.Forms
 
                     }
 
-                    people = textFileHelper.ReadFromFile(filePath);
+                    people = textFileHelper.ReadFromFile();
 
                     for (int i = 0; i < selectedPeople.Count; i++)
                     {
@@ -118,7 +117,7 @@ namespace UI.Forms
                         }
                     }
 
-                    textFileHelper.WriteToFile(filePath, people);
+                    textFileHelper.WriteToFile(people);
 
                     dgvOsobe.DataSource = null;
                     dgvOsobe.DataSource = people;
@@ -147,7 +146,7 @@ namespace UI.Forms
                 list.Add(o);
             }
      
-            textFileHelper.WriteToFile(filePath, people);
+            textFileHelper.WriteToFile(people);
 
             this.Close();
         }
