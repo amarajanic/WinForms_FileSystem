@@ -11,6 +11,7 @@ using System.IO;
 using Library.Models;
 using Library.DataAccess;
 using System.Windows;
+using MessageBox = System.Windows.MessageBox;
 
 namespace UI.Forms
 {
@@ -30,7 +31,14 @@ namespace UI.Forms
         {
             if(!File.Exists(textFileHelper.filePath))
             {
-            File.CreateText(textFileHelper.filePath).Close();
+                try
+                {
+                    File.CreateText(textFileHelper.filePath).Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
             people = textFileHelper.ReadFromFile();
