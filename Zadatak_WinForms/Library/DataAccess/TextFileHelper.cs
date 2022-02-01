@@ -1,4 +1,5 @@
-﻿using Library.Models;
+﻿using Library.Interfaces;
+using Library.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Library.DataAccess
 {
-    public class TextFileHelper
+    public class TextFileHelper : IHelper<Osoba>
     {
         public List<Osoba> ReadFromFile(string filePath)
         {
